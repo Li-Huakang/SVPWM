@@ -1,0 +1,148 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{tikz}
+%\usetikzlibrary{graphs}
+\usetikzlibrary{intersections}
+\usepackage{color}
+
+%设置预览边界
+\usepackage[active,tightpage]{preview}
+\setlength\PreviewBorder{5pt}%
+
+\begin{document}
+
+\begin{preview}
+
+
+	\begin{tikzpicture}[scale = 1.2]%wt=pi/2
+		%%init
+		\newcommand{\oo}{3}%正弦电压信号波形坐标原点与空间矢量圆的相对距离
+		\coordinate (O) at (\oo,0);%波形坐标原点
+		\clip (-2,2.2) rectangle (\oo + 3.8, -2.2);%图片尺寸
+	
+		%%空间矢量
+		%辅助线
+		\draw[help lines] (0,0) circle[radius = 1];
+		\draw[help lines] (0,0) circle[radius = 1.5];
+		\draw[help lines, orange] (0,0) -- (0:-1.8);
+		\draw[help lines, green!50!black] (0,0) -- (120:-1.8);
+		\draw[help lines, red] (0,0) -- (-120:-1.8);
+		\draw[help lines, orange, -latex] (0,0) -- (0:1.8) node[anchor = west]{A};
+		\draw[help lines, green!50!black, -latex] (0,0) -- (120:1.8) node[anchor = east]{B};
+		\draw[help lines, red, -latex] (0,0) -- (-120:1.8) node[anchor = north]{C};
+		\draw[->] (150:1.25) arc[start angle = 150,end angle = 180,radius = 1.25] node[anchor = east] {$\omega$};
+		%在三个轴上的矢量大小
+		\draw[very thick, orange,-latex] (0,0) -- (0:{sin(90)}) node[anchor=south]{$\vec {x_a}$} coordinate (xa);
+		\draw[very thick, green!50!black,-latex] (0,0) -- (120:{sin(-30)}) node[anchor=east]{$\vec {x_b}$} coordinate(xb);
+		\draw[very thick, red,-latex] (0,0) -- (-120:{sin(210)}) node[anchor=east]{$\vec {x_c}$} coordinate(xc);
+		%合成矢量
+		\draw[dashed,red,-latex] (xb) -- +(xc);
+		\draw[dashed,green!50!black,-latex] (xc) -- +(xb);
+		\draw[very thick, black,-latex] (0,0) -- (0:1.5) node[anchor=south]{$\vec{x_F}$};
+	
+		%%正弦波形
+		%坐标轴
+		\draw[<-] (O)++(0,1.8) node[anchor = south]{$u$}-- +(0,-3.6);
+		\draw[->] (O)++(-0.2,0) -- +(3.4,0)node[anchor = west]{$\omega t$};
+		%abc波形
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,orange] plot(\x, {sin(\x*2*pi/\oo r)});
+		\draw[xshift = \oo cm] (.25*\oo,1.1) node[anchor = east] {$u_a$};
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,green!50!black] plot(\x, {sin((\x*2*pi/\oo-2/3*pi) r)});
+		\draw[xshift = \oo cm] (.583*\oo,1.1) node[anchor = east] {$u_b$};
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,red] plot(\x, {sin((\x*2*pi/\oo+2/3*pi) r)});
+		\draw[xshift = \oo cm] (.913*\oo,1.1) node[anchor = east] {$u_c$};
+		%wt=pi
+		\draw[thick,xshift = \oo cm,dashed](.25*3,1.6)--(.25*3,-1.6) node[anchor=north]{$\omega t = \frac{\pi}{2}$};
+	\end{tikzpicture}
+	
+	
+	\begin{tikzpicture}[scale = 1.2]%wt=7/6pi
+		%%init
+		\newcommand{\oo}{3}%正弦电压信号波形坐标原点与空间矢量圆的相对距离
+		\coordinate (O) at (\oo,0);%波形坐标原点
+		\clip (-2,2.2) rectangle (\oo + 3.6, -2.2);%图片尺寸
+	
+		%%空间矢量
+		%辅助线
+		\draw[help lines] (0,0) circle[radius = 1];
+		\draw[help lines] (0,0) circle[radius = 1.5];
+		\draw[help lines, orange] (0,0) -- (0:-1.8);
+		\draw[help lines, green!50!black] (0,0) -- (120:-1.8);
+		\draw[help lines, red] (0,0) -- (-120:-1.8);
+		\draw[help lines, orange, -latex] (0,0) -- (0:1.8) node[anchor = west]{A};
+		\draw[help lines, green!50!black, -latex] (0,0) -- (120:1.8) node[anchor = east]{B};
+		\draw[help lines, red, -latex] (0,0) -- (-120:1.8) node[anchor = north]{C};
+		\draw[->] (150:1.25) arc[start angle = 150,end angle = 180,radius = 1.25] node[anchor = east] {$\omega$};
+		%在三个轴上的矢量大小
+		\draw[very thick, orange,-latex] (0,0) -- (0:{sin(210)}) node[anchor=north]{$\vec {x_a}$} coordinate (xa);
+		\draw[very thick, green!50!black,-latex] (0,0) -- (120:{sin(90)}) node[anchor=west]{$\vec {x_b}$} coordinate(xb);
+		\draw[very thick, red,-latex] (0,0) -- (-120:{sin(330)}) node[anchor=west]{$\vec {x_c}$} coordinate(xc);
+		%合成矢量
+		\draw[dashed,red,-latex] (xa) -- +(xc);
+		\draw[dashed,orange,-latex] (xc) -- +(xa);
+		\draw[very thick, black,-latex] (0,0) -- (120:1.5) node[anchor=west]{$\vec{x_F}$};
+	
+		%%正弦波形
+		%坐标轴
+		\draw[<-] (O)++(0,1.8) node[anchor = south]{$u$}-- +(0,-3.6);
+		\draw[->] (O)++(-0.2,0) -- +(3.4,0)node[anchor = west]{$\omega t$};
+		%abc波形
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,orange] plot(\x, {sin(\x*2*pi/\oo r)});
+		\draw[xshift = \oo cm] (.25*\oo,1.1) node[anchor = east] {$u_a$};
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,green!50!black] plot(\x, {sin((\x*2*pi/\oo-2/3*pi) r)});
+		\draw[xshift = \oo cm] (.583*\oo,1.1) node[anchor = east] {$u_b$};
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,red] plot(\x, {sin((\x*2*pi/\oo+2/3*pi) r)});
+		\draw[xshift = \oo cm] (.913*\oo,1.1) node[anchor = east] {$u_c$};
+		%wt=7/6pi
+		\draw[thick,xshift = \oo cm,dashed](7/12*3,1.6)--(7/12*3,-1.6) node[anchor=north]{$\omega t = {\frac{7}{6}\pi}$};
+	\end{tikzpicture}
+	
+	
+	\begin{tikzpicture}[scale = 1.2]%wt=11/6pi
+		%%init
+		\newcommand{\oo}{3}%正弦电压信号波形坐标原点与空间矢量圆的相对距离
+		\coordinate (O) at (\oo,0);%波形坐标原点
+		\clip (-2,2.2) rectangle (\oo + 3.6, -2.2);%图片尺寸
+	
+		%%空间矢量
+		%辅助线
+		\draw[help lines] (0,0) circle[radius = 1];
+		\draw[help lines] (0,0) circle[radius = 1.5];
+		\draw[help lines, orange] (0,0) -- (0:-1.8);
+		\draw[help lines,green!50!black] (0,0) -- (120:-1.8);
+		\draw[help lines, red] (0,0) -- (-120:-1.8);
+		\draw[help lines, orange, -latex] (0,0) -- (0:1.8) node[anchor = west]{A};
+		\draw[help lines, green!50!black, -latex] (0,0) -- (120:1.8) node[anchor = east]{B};
+		\draw[help lines, red, -latex] (0,0) -- (-120:1.8) node[anchor = north]{C};
+		\draw[->] (150:1.25) arc[start angle = 150,end angle = 180,radius = 1.25] node[anchor = east] {$\omega$};
+		%在三个轴上的矢量大小
+		\draw[very thick, orange,-latex] (0,0) -- (0:{sin(330)}) node[anchor=south]{$\vec {x_a}$} coordinate (xa);
+		\draw[very thick, green!50!black,-latex] (0,0) -- (120:{sin(210)}) node[anchor=west]{$\vec {x_b}$} coordinate(xb);
+		\draw[very thick, red,-latex] (0,0) -- (-120:{sin(90)}) node[anchor=west]{$\vec {x_c}$} coordinate(xc);
+		%合成矢量
+		\draw[dashed,green!50!black,-latex] (xa) -- +(xb);
+		\draw[dashed,orange,-latex] (xb) -- +(xa);
+		\draw[very thick, black,-latex] (0,0) -- (-120:1.5) node[anchor=west]{$\vec{x_F}$};
+	
+		%%正弦波形
+		%坐标轴
+		\draw[<-] (O)++(0,1.8) node[anchor = south]{$u$}-- +(0,-3.6);
+		\draw[->] (O)++(-0.2,0) -- +(3.4,0)node[anchor = west]{$\omega t$};
+		%abc波形
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,orange] plot(\x, {sin(\x*2*pi/\oo r)});
+		\draw[xshift = \oo cm] (.25*\oo,1.1) node[anchor = east] {$u_a$};
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,green!50!black] plot(\x, {sin((\x*2*pi/\oo-2/3*pi) r)});
+		\draw[xshift = \oo cm] (.583*\oo,1.1) node[anchor = east] {$u_b$};
+		\draw[xshift = \oo cm, domain = 0:3,smooth,very thick,red] plot(\x, {sin((\x*2*pi/\oo+2/3*pi) r)});
+		\draw[xshift = \oo cm] (.913*\oo,1.1) node[anchor = east] {$u_c$};
+		%wt=11/6pi
+		\draw[thick,xshift = \oo cm,dashed](11/12*3,1.6)--(11/12*3,-1.6) node[anchor=north]{$\omega t = {\frac{11}{6}\pi}$};
+	\end{tikzpicture}
+	
+
+\end{preview}
+
+
+\end{document}
+
+
