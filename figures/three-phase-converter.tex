@@ -1,6 +1,6 @@
 \documentclass[tikz]{standalone}
 
-\usepackage{tikz}
+\usepackage{circuitikz}
 \usepackage{color}
 \usetikzlibrary{intersections}
 
@@ -11,13 +11,26 @@
 
 \begin{preview}
 
-  \begin{tikzpicture}[scale = 1.0]
+  \begin{tikzpicture}[scale = 1.0,american]
     %%init
     \newcommand{\len}{length}
     \coordinate (O) at (0,0);%坐标原点
     
     %%fist step
-    \draw[solid] (O) circle[radius = 2];
+    \draw node[left](O){$\frac{V_D}{2}$} to[battery] (0,-3) node[left](0,-3){$-\frac{V_D}{2}$};%电源
+
+    \draw (O) -- (1,0) to[normal open switch,l=$T_1$] (1,-1.5) coordinate (a) to[normal open switch,l=$T4$] (1,-3) -- (0,-3);%桥臂1
+
+    \draw (O) -- (1*2,0) to[normal open switch,l=$T_3$] (1*2,-1.5) coordinate (b) to[normal open switch,l=$T6$] (1*2,-3) -- (0,-3);%桥臂2
+
+    \draw (O) -- (1*3,0) to[normal open switch,l=$T_5$] (1*3,-1.5) coordinate (c) to[normal open switch,l=$T2$] (1*3,-3) -- (0,-3);%桥臂3
+
+    \draw (a)--+(.1,0) node[right]{$a$};
+    \fill (a)++(.1,0) circle (.5pt);
+    \draw (b)--+(.1,0) node[right]{$b$};
+    \fill (b)++(.1,0) circle (.5pt);
+    \draw (c)--+(.1,0) node[right]{$c$};
+    \fill (c)++(.1,0) circle (.5pt);
   \end{tikzpicture}
   
 \end{preview}
