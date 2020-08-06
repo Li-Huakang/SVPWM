@@ -1,0 +1,25 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{tikz}
+\usepackage{color}
+\usetikzlibrary{intersections}
+
+\usepackage[active,tightpage]{preview}
+\setlength\PreviewBorder{5pt}%
+
+\begin{document}
+
+\begin{preview}
+
+  \begin{tikzpicture}[scale = 1.0]
+    %%init
+    \newcommand{\len}{length}
+    \coordinate (O) at (0,0);%坐标原点
+    
+    %%fist step
+    \draw[solid] (O) circle[radius = 2];
+  \end{tikzpicture}
+  
+\end{preview}
+
+\end{document}
