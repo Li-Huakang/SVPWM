@@ -222,12 +222,32 @@ abc系统向$\alpha \beta$系统的变换就是所谓的Clarke变换，见式\re
 \section{SVPWM原理}
 SVPWM在最早出现时，与电机的旋转磁链有关，但是后来SVPWM也广泛用于其他三相电力电子变换和控制之中。这是因为任何三相对称正弦系统都能通过坐标变换的数学方式得到类似旋转磁链的空间旋转矢量。通过控制电机的磁链追踪理想磁链圆可以达到控制电机的目的，同样的，通过控制电力电子变换器的三相信号经坐标变换产生的空间矢量追踪理想矢量圆，也可以达到控制电力电子变换器的目的。
 
-以三相两电平电压型逆变器为例。逆变器一共有3个桥臂，8种开关状态。
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width = .5\linewidth ]{three-phase-converter.pdf}
+  \caption{三相两电平电压型逆变器电路}
+  \label{three-phase-converter}
+\end{figure}  
 
-  
+以三相两电平电压型逆变器为例。如图\ref{three-phase-converter}所示，逆变器一共有3个桥臂，分别将其记为a桥臂、b桥臂和c桥臂，每个桥臂同时只允许一个开关管导通，因此总共就有8种开关状态组合。将各相桥臂的上管导通下管关断记为1，相反将桥臂的上管关断下管导通记为0。以a-b-c的顺序依次记下三个桥臂的开关状态，即这八种状态可以表示成000、001、010、011、100、101、110和111。开关管的开关状态会直接影响到桥臂中点输出的电压，将各相的输出电压依次记为$u_a$、$u_b$和$u_c$。
+开关状态与输出电压的对应关系如表\ref{switch-mode} 所示。
 
-
-
+\begin{table}[]
+  \begin{tabular}{lllllll}
+  \hline
+  \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{$u_a$} & \multicolumn{1}{l|}{$u_b$} & \multicolumn{1}{l|}{$u_c$} & \multicolumn{1}{l|}{$u_\alpha$} & \multicolumn{1}{l|}{$u_\beta$} & \multicolumn{1}{l|}{$u=u_\alpha + u_\beta$} \\ \hline
+  000                    &                            &                            &                            &                                 &                                &                                             \\
+  001                    &                            &                            &                            &                                 &                                &                                             \\
+  010                    &                            &                            &                            &                                 &                                &                                             \\
+  011                    &                            &                            &                            &                                 &                                &                                             \\
+  100                    &                            &                            &                            &                                 &                                &                                             \\
+  101                    &                            &                            &                            &                                 &                                &                                             \\
+  110                    &                            &                            &                            &                                 &                                &                                             \\
+  111                    &                            &                            &                            &                                 &                                &                                            
+  \end{tabular}
+  \caption{开关状态与空间矢量对应关系}
+  \label{switch-mode}
+\end{table}
 
 
 
