@@ -46,21 +46,6 @@
     </marker>
     <marker
        inkscape:collect="always"
-       inkscape:isstock="true"
-       style="overflow:visible;"
-       id="marker1487"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path1485" />
-    </marker>
-    <marker
-       inkscape:collect="always"
        inkscape:stockid="Arrow1Lend"
        orient="auto"
        refY="0.0"
@@ -73,51 +58,6 @@
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
-    </marker>
-    <marker
-       inkscape:collect="always"
-       inkscape:stockid="Arrow1Lstart"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="marker1401"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         id="path1399"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) translate(12.5,0)" />
-    </marker>
-    <marker
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       style="overflow:visible;"
-       id="Arrow1Lend"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path1088" />
-    </marker>
-    <marker
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="Arrow1Lstart"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lstart">
-      <path
-         transform="scale(0.8) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path1085" />
     </marker>
     <g
        id="g9051">
@@ -359,17 +299,17 @@
   <sodipodi:namedview
      inkscape:lockguides="false"
      inkscape:window-maximized="0"
-     inkscape:window-y="53"
-     inkscape:window-x="567"
+     inkscape:window-y="42"
+     inkscape:window-x="276"
      inkscape:window-height="1224"
      inkscape:window-width="1959"
      showgrid="false"
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="214.84791"
-     inkscape:cx="261.37144"
-     inkscape:zoom="2.0000001"
+     inkscape:cy="229.41489"
+     inkscape:cx="291.74307"
+     inkscape:zoom="11.313709"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -381,7 +321,8 @@
      fit-margin-left="10"
      fit-margin-right="10"
      fit-margin-bottom="10"
-     lock-margins="true">
+     lock-margins="true"
+     inkscape:snap-text-baseline="false">
     <inkscape:grid
        type="xygrid"
        id="grid898"
@@ -510,107 +451,115 @@
        id="text1953"
        y="36.173923"
        x="44.798485"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        xml:space="preserve"><tspan
-         style="stroke-width:0.264583"
-         y="36.173923"
+         sodipodi:role="line"
+         id="tspan984"
          x="44.798485"
-         id="tspan1951"
-         sodipodi:role="line">$V(010)$</tspan></text>
+         y="36.173923">$\vec V(010)$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        x="104.10559"
        y="36.173923"
        id="text1961"><tspan
          sodipodi:role="line"
-         id="tspan1959"
+         id="tspan986"
          x="104.10559"
-         y="36.173923"
-         style="stroke-width:0.264583">$V(110)$</tspan></text>
+         y="36.173923">$\vec V(110)$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        x="44.798485"
        y="151.7305"
        id="text1965"><tspan
          sodipodi:role="line"
-         id="tspan1963"
+         id="tspan992"
          x="44.798485"
-         y="151.7305"
-         style="stroke-width:0.264583">$V(001)$</tspan></text>
+         y="151.7305">$\vec V(001)$</tspan></text>
     <text
        id="text1969"
        y="151.91759"
        x="104.10559"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        xml:space="preserve"><tspan
-         y="151.91759"
+         sodipodi:role="line"
+         id="tspan994"
          x="104.10559"
-         id="tspan2113"
-         sodipodi:role="line">$V(101)$</tspan></text>
+         y="151.91759">$\vec V(101)$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        x="-2.2781525"
        y="93.610146"
        id="text1973"><tspan
          sodipodi:role="line"
-         id="tspan1971"
+         id="tspan990"
          x="-2.2781525"
-         y="93.610146"
-         style="stroke-width:0.264583">$V(011)$</tspan></text>
+         y="93.610146">$\vec V(011)$</tspan></text>
     <text
        id="text1977"
        y="93.610146"
        x="142.61375"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        xml:space="preserve"><tspan
-         style="stroke-width:0.264583"
-         y="93.610146"
+         sodipodi:role="line"
+         id="tspan988"
          x="142.61375"
-         id="tspan1975"
-         sodipodi:role="line">$V(100)$</tspan></text>
+         y="93.610146">$\vec V(100)$</tspan></text>
     <text
        id="text1981"
        y="99.436485"
        x="63.694439"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        xml:space="preserve"><tspan
-         style="stroke-width:0.264583"
-         y="99.436485"
+         sodipodi:role="line"
+         id="tspan996"
          x="63.694439"
-         id="tspan1979"
-         sodipodi:role="line">$V(000)$</tspan></text>
+         y="99.436485">$\vec V(000)$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
        x="64.045914"
        y="106.61397"
        id="text1985"><tspan
          sodipodi:role="line"
-         id="tspan1983"
+         id="tspan998"
          x="64.045914"
-         y="106.61397"
-         style="stroke-width:0.264583">$V(111)$</tspan></text>
+         y="106.61397">$\vec V(111)$</tspan></text>
     <path
        id="path2127"
-       d="M 80.719513,91.926344 111.58914,73.965832"
+       d="M 80.190346,91.926344 111.05997,73.965832"
        style="fill:none;stroke:#000000;stroke-width:0.352778;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2131)" />
     <path
        id="path2199"
-       d="M 101.03492,92.246275 111.58914,73.965832 H 90.367183"
+       d="M 100.50575,92.246275 111.05997,73.965832 H 89.838016"
        style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1" />
     <text
        id="text2209"
        y="75.772911"
        x="113.58437"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan1000"
+         x="113.58437"
+         y="75.772911">$\vec V_{ref}$</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1710"
+       d="m 86.051537,88.488588 c 1.01458,1.645332 0.939412,1.939179 0.948258,3.538943"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       id="text1714"
+       y="91.207336"
+       x="88.360794"
        style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
        xml:space="preserve"><tspan
          style="stroke-width:0.264583"
-         y="75.772911"
-         x="113.58437"
-         id="tspan2207"
-         sodipodi:role="line">$V_{ref}$</tspan></text>
+         y="91.207336"
+         x="88.360794"
+         id="tspan1712"
+         sodipodi:role="line">$\theta$</tspan></text>
   </g>
 </svg>

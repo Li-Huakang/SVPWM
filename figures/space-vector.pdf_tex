@@ -61,15 +61,17 @@
     \put(0.84943583,0.23342112){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\uppercase\expandafter{\romannumeral6}\end{tabular}}}}%
     \put(0.09946502,0.23342112){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\uppercase\expandafter{\romannumeral4}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{space-vector.pdf}}%
-    \put(0.24842205,0.84107904){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(010)$\end{tabular}}}}%
-    \put(0.67180806,0.84107904){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(110)$\end{tabular}}}}%
-    \put(0.24842205,0.0161351){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(001)$\end{tabular}}}}%
-    \put(0.67180806,0.0147995){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(101)$\end{tabular}}}}%
-    \put(-0.08765218,0.43104903){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(011)$\end{tabular}}}}%
-    \put(0.94671302,0.43104903){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(100)$\end{tabular}}}}%
-    \put(0.3833179,0.38945552){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(000)$\end{tabular}}}}%
-    \put(0.38582703,0.33821637){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V(111)$\end{tabular}}}}%
+    \put(0.24842205,0.84107904){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(010)$\end{tabular}}}}%
+    \put(0.67180806,0.84107904){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(110)$\end{tabular}}}}%
+    \put(0.24842205,0.0161351){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(001)$\end{tabular}}}}%
+    \put(0.67180806,0.0147995){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(101)$\end{tabular}}}}%
+    \put(-0.08765218,0.43104903){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(011)$\end{tabular}}}}%
+    \put(0.94671302,0.43104903){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(100)$\end{tabular}}}}%
+    \put(0.3833179,0.38945552){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(000)$\end{tabular}}}}%
+    \put(0.38582703,0.33821637){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V(111)$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{space-vector.pdf}}%
-    \put(0.7394759,0.55838682){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{ref}$\end{tabular}}}}%
+    \put(0.7394759,0.55838682){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec V_{ref}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{space-vector.pdf}}%
+    \put(0.55940792,0.44820239){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\theta$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
